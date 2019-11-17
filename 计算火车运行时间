@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main(){
+	int a,b,c,d;
+	scanf("%d %d",&a,&b);
+	c=b%100-a%100;
+	d=b/100-a/100;
+	if(c>=0) printf("%02d:%02d",d,c);
+	if(c<0){
+	c=b%100+60-a%100;
+	d-=1;
+	printf("%02d:%02d",d,c);}
+}
