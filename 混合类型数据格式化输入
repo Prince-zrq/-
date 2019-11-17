@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main(){
+	double a1,a2;
+	int b;
+	char c;
+	scanf("%lf %d %c %lf",&a1,&b,&c,&a2);
+	printf("%c %d %.2lf %.2lf",c,b,a1,a2);
+}
