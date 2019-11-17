@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main(){
+	int y,i,k=0;
+	scanf("%d",&y);
+	if(y>2000&&y<=2100){
+	for(i=2001;i<=y;i++){
+		if(i%4==0&&i%100!=0||i%400==0)
+		{printf("%d\n",i);
+		k++;}
+	}
+	if(k==0) printf("None");}
+	else printf("Invalid year!"); 
+}
